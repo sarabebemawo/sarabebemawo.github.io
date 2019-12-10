@@ -36,8 +36,15 @@ body{
     margin-top: 20px;
 }
 
-.btn:hover{
+.btn:hover, .btn:active{
     background: #FFF;
     color: #2c3e50;
     transition: 0.5s;
+}
+
+@media only screen and (min-width: 1024px) {
+    #bigHead{
+        background-size: contain;
+        background-repeat: repeat-x;
+    }
 }
