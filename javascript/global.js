@@ -1,4 +1,11 @@
 var sts = 1;
+
+function noscroll(){
+    window.scrollTo(0,0);
+}
+
+window.addEventListener("scroll",noscroll);
+
 function kopce(){            
     var slika = document.getElementById("bigHead");
     var naslovce = document.getElementById("naslovce");
