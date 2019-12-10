@@ -5,11 +5,11 @@ function noscroll(){
     window.scrollTo(0,0);
 }
 
-function napalenje(){
+window.onload = function(){
     slika.style.backgroundImage = "url('2eer.PNG')";
-    slika.style.backgroundImage = "url('3eer.PNG')";
+    slika.style.backgroundImage = "url('3eer.jpeg')";
     slika.style.backgroundImage = "url('4eer.PNG')";
-    slika.style.backgroundImage = "url('1eer.PNG')";
+    slika.style.backgroundImage = "url('1eer.jpeg')";
 }
 
 window.addEventListener("scroll",noscroll);
