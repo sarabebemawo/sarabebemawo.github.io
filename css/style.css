@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 3vh;
+    color: #FFF;
+    line-height: 1.25;
+}
+
+#bigHead{
+    background: linear-gradient(45deg, #16a085, #2980b9);
+    background-image: url('../1eer.jpeg');    
+    height: 100vh;    
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.btn{
+    font-size: 3vh;
+    text-decoration: none;
+    color: #FFF;
+    border: #2c3e50 1px solid;
+    background-color: #2c3e50;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.btn:hover{
+    background: #FFF;
+    color: #2c3e50;
+    transition: 0.5s;
+}
