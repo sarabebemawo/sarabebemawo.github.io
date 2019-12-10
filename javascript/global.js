@@ -5,12 +5,21 @@ function noscroll(){
     window.scrollTo(0,0);
 }
 
-window.onload = function(){
-    slika.style.backgroundImage = "url('2eer.PNG')";
-    slika.style.backgroundImage = "url('3eer.jpeg')";
-    slika.style.backgroundImage = "url('4eer.PNG')";
-    slika.style.backgroundImage = "url('1eer.jpeg')";
+function lodniSliki(srcs) {
+    if (!slikiNaogaliste.cache) {
+        slikiNaogaliste.cache = [];
+    }
+    var img;
+    for (var i = 0; i < srcs.length; i++) {
+        img = new Image();
+        img.src = srcs[i];
+        slikiNaogaliste.cache.push(img);
+    }
 }
+
+var slikiNaogaliste = ["2eer.PNG", "3eer.jpeg", "4eer.PNG", "1eer.jpeg"];
+
+lodniSliki(slikiNaogaliste);
 
 window.addEventListener("scroll",noscroll);
 
