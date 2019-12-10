@@ -1,13 +1,20 @@
 var sts = 1;
+var slika = document.getElementById("bigHead");
 
 function noscroll(){
     window.scrollTo(0,0);
 }
 
+function napalenje(){
+    slika.style.backgroundImage = "url('2eer.PNG')";
+    slika.style.backgroundImage = "url('3eer.PNG')";
+    slika.style.backgroundImage = "url('4eer.PNG')";
+    slika.style.backgroundImage = "url('1eer.PNG')";
+}
+
 window.addEventListener("scroll",noscroll);
 
-function kopce(){            
-    var slika = document.getElementById("bigHead");
+function kopce(){         
     var naslovce = document.getElementById("naslovce");
     var tekstce = document.getElementById("tekstce");
 
@@ -33,7 +40,7 @@ function kopce(){
       sts = 4;
     }else if(sts == 4){
       slika.style.backgroundImage = "url('1eer.jpeg')"; 
-      naslovce.innerHTML = "Сарче бебуш мој🤗, ТЕ САКАМ НАЈВИШЕ!";
+      naslovce.innerHTML = "Сарче бебуш мој🤗, ТЕ САКАМ НАЈИШЕ!";
       tekstce.innerHTML = "Срцуш те сакам најмногу! Иако некад знаеш да си гомце ипак те сакам највеќе! Не се лути за глупости, иако си бебе мало😅";
       document.getElementsByTagName("A")[0].innerHTML = "Следна";
       sts = 1;
